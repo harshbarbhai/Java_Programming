@@ -2,32 +2,30 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////////////
-//function Name:sumOfDigits
-//Description:logic to find sum of digits of number
+//function Name:printTable
+//Description:logic to print table of number
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:18/11/2025
 ///////////////////////////////////////////////////////////////////////////////////////////
-    void sumOfDigits(int num)
+    void printTable(int num)
     {
-        int no=0;    
-        int iSum=0;
-        while(num>0)
+        int iCnt=0;
+        int table=0;
+        for(iCnt=1;iCnt<=10;iCnt++)
         {
-            no=num%10;
-            num=num/10;
-            iSum=iSum+no;
+            table=num*iCnt;
+            System.out.println(table);
         }
-        System.out.println(iSum);
     }
 }
 
-class Assignment_81
+class Assignment_85
 {
     public static void main(String A[])
     {
         Logic obj=new Logic();
-        obj.sumOfDigits(12345);
+        obj.printTable(5);
     }
 }
