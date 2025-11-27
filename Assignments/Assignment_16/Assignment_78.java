@@ -2,30 +2,30 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////////////
-//function Name:calculateSum
-//Description:Calculate the sum of first N natural numbers
+//function Name:findFactorial
+//Description:find factorial of given number
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:18/11/2025
 ///////////////////////////////////////////////////////////////////////////////////////////
-    void calculateSum(int n)
+    void findFactorial(int num)
     {
-        int iSum=0;
         int iCnt=0;
-        for(iCnt=0;iCnt<=n;iCnt++)
+        int fact=1;
+        for(iCnt=1;iCnt<=num;iCnt++)
         {
-            iSum=iSum+iCnt;
+            fact=fact*iCnt;
         }
-        System.out.println("sum of natural number is "+iSum);
+        System.out.println("Factorial of given number is: "+fact);
     }
 }
 
-class Assignment_76
+class Assignment_78
 {
     public static void main(String A[])
     {
         Logic obj=new Logic();
-        obj.calculateSum(10);
+        obj.findFactorial(5);
     }
 }

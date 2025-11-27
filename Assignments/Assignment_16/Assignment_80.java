@@ -2,30 +2,32 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////////////
-//function Name:calculateSum
-//Description:Calculate the sum of first N natural numbers
+//function Name:countDigits
+//Description:logic to count the numbers of digit in given number
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:18/11/2025
 ///////////////////////////////////////////////////////////////////////////////////////////
-    void calculateSum(int n)
+    void countDigits(int num)
     {
-        int iSum=0;
+        int no=0;
         int iCnt=0;
-        for(iCnt=0;iCnt<=n;iCnt++)
+        while(num>0)
         {
-            iSum=iSum+iCnt;
+            no=num%10;
+            num=num/10;
+            iCnt++;
         }
-        System.out.println("sum of natural number is "+iSum);
+        System.out.println(iCnt);
     }
 }
 
-class Assignment_76
+class Assignment_80
 {
     public static void main(String A[])
     {
         Logic obj=new Logic();
-        obj.calculateSum(10);
+        obj.countDigits(12345);
     }
 }

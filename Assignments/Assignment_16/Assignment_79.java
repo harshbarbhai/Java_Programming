@@ -2,30 +2,30 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////////////
-//function Name:calculateSum
-//Description:Calculate the sum of first N natural numbers
+//function Name:reverseNumber
+//Description:logic to reverse number
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:18/11/2025
 ///////////////////////////////////////////////////////////////////////////////////////////
-    void calculateSum(int n)
+    void reverseNumber(int num)
     {
-        int iSum=0;
-        int iCnt=0;
-        for(iCnt=0;iCnt<=n;iCnt++)
+        int no=0;
+        while(num>0)
         {
-            iSum=iSum+iCnt;
+            no=num%10;
+            num=num/10;
+            System.out.println(no);
         }
-        System.out.println("sum of natural number is "+iSum);
     }
 }
 
-class Assignment_76
+class Assignment_79
 {
     public static void main(String A[])
     {
         Logic obj=new Logic();
-        obj.calculateSum(10);
+        obj.reverseNumber(1234);
     }
 }

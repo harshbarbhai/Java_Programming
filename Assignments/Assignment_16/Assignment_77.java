@@ -2,30 +2,32 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////////////
-//function Name:calculateSum
-//Description:Calculate the sum of first N natural numbers
+//function Name:calculateEvenOdd
+//Description:check whether even or odd
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:18/11/2025
 ///////////////////////////////////////////////////////////////////////////////////////////
-    void calculateSum(int n)
+    void calculateEvenOdd(int num)
     {
-        int iSum=0;
-        int iCnt=0;
-        for(iCnt=0;iCnt<=n;iCnt++)
+        if((num%2)==0)
         {
-            iSum=iSum+iCnt;
+            System.out.println("given number is even");
         }
-        System.out.println("sum of natural number is "+iSum);
+        else
+        {
+            System.out.println("given number is odd");
+        }
+
     }
 }
 
-class Assignment_76
+class Assignment_77
 {
     public static void main(String A[])
     {
         Logic obj=new Logic();
-        obj.calculateSum(10);
+        obj.calculateEvenOdd(7);
     }
 }
