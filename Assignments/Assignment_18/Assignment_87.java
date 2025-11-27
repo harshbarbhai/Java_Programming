@@ -1,31 +1,31 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////
-//function Name:checkPrime
-//Description:logic to check whether number is prime or not
+//function Name:checkEvenNumber
+//Description:logic to check whether number even
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:27/11/2025
 ////////////////////////////////////////////////////////////////////////////////////
-    void checkPrime(int num)
+    void checkEvenNumber(int num)
     {
-        if((num % num)==0 && (num % 1)==0)
+        if((num % 2)==0)
         {
-            System.out.println("given number is prime");
+            System.out.println("given number is even");
         }
         else 
         {
-            System.out.println("number is not prime");
+            System.out.println("number is odd");
         }
     }
 }
 
-class Assignment_86
+class Assignment_87
 {
     public static void main(String a[])
     {
         Logic lobj=new Logic();
-        lobj.checkPrime(11);
+        lobj.checkEvenNumber(20);
     }
 }

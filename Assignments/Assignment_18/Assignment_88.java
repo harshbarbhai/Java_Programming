@@ -1,31 +1,31 @@
 class Logic
 {
 ///////////////////////////////////////////////////////////////////////////////////
-//function Name:checkPrime
-//Description:logic to check whether number is prime or not
+//function Name:printOddNumbers
+//Description:logic to print all odd numbers
 //input type:int
 //output type:void
 //Auther Name:Harsh Barbhai
 //Date:27/11/2025
 ////////////////////////////////////////////////////////////////////////////////////
-    void checkPrime(int num)
+    void printOddNumbers(int num)
     {
-        if((num % num)==0 && (num % 1)==0)
+        int iCnt=0;
+        for(iCnt=0;iCnt<=num;iCnt++)
         {
-            System.out.println("given number is prime");
-        }
-        else 
-        {
-            System.out.println("number is not prime");
+            if((iCnt % 2)!=0)
+            {
+                System.out.println(iCnt);
+            }
         }
     }
 }
 
-class Assignment_86
+class Assignment_88
 {
     public static void main(String a[])
     {
         Logic lobj=new Logic();
-        lobj.checkPrime(11);
+        lobj.printOddNumbers(20);
     }
 }
